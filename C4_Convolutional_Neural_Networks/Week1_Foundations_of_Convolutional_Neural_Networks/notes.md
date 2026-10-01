@@ -15,3 +15,28 @@ Padding refers to the process of adding additional pixel around the original mat
 ## 3 Strided Convolutions
 
 Refers to how many steps the kernel takes when sliding over the matrix. For example, stride = 1 means the kernel will  not skip any single pixel when scanning over the matrix, but stride = 2 means the kernel will skip one pixel when moving across the matrix.
+
+## 4 Convolutions Over Volume
+
+When we convolve a 3D matrix, we need 3D filter as well. let say we want to convolve 6 x 6 x 3 matrix, then we need a 3 x 3 x 3 filters. Each 2D filter applied to each channel.
+
+## 5 One Layer of a Convolutional Network
+
+later
+
+## Simple Convolutional Network Example
+
+output = $\frac{n + 2p - f}{s} + 1$
+The output after we applied convolution depends on all parameters including padding (p), input size (n), filter size (f) and stride (s). The number of filters we use determine the number of ouput ($n_h x n_w x n_c$).
+
+Types of layer in a convolutional network?
+- Convolution
+- Pooling
+- Fully connected 
+
+## Pooling Layers
+
+Pooling layer has no parameters to learn because it is just a fixed function. Similar to convolution, the output of pooling depends on the filter size and stride. Padding usually not used. The only different is how the filter extract the feature. With max pooling, the filter will extract the maximum number covered by the filter and average pooling means the filter averaging the feature. The number of filtered channell depends on the input channel. If the input channel is three then the output channel will be three because the filter will process them independently.
+
+## CNN Example
+
