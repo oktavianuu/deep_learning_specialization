@@ -1,16 +1,6 @@
 '''
 Author:     Ji-Sung Kim
-Project:    deepjazz
-Purpose:    Parse, cleanup and process data.
-
-Code adapted from Evan Chow's jazzml, https://github.com/evancchow/jazzml with
-express permission.
-'''
-
-from __future__ import print_function
-
-from music21 import *
-from collections import defaultdict, OrderedDict
+Project:    deepjazz Purpose:    Parse, cleanup and process data.  Code adapted from Evan Chow's jazzml, https://github.com/evancchow/jazzml with express permission.  ''' from __future__ import print_function from music21 import * from collections import defaultdict, OrderedDict
 from itertools import groupby, zip_longest
 
 from grammar import *
